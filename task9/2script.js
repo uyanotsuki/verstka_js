@@ -1,1 +1,2 @@
-alert('dotadota')
+"use strict";
+alert('dotadota');

@@ -1,1 +1,1 @@
-alert('dotadota')
+alert('dotadota');
