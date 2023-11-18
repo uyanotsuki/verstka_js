@@ -7,7 +7,6 @@ if (num >= 0) {
 } else {
 	res0 = '2';
 }
-
 console.log(res);
 
 // -->

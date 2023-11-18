@@ -7,7 +7,7 @@ console.log(a == b);
 // 2
 let a2 = 5 * (7 - 4);
 let b2 = 1 + 2 + 7;
-console.log(a2 > b2);
+console.log(a2 >  b2);
 
 // 3
 let a3 = 2 ** 4;
