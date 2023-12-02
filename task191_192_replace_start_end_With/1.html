@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="1.js?v=1"></script>
+</head>
+<body>
+  Метод replace осуществляет поиск и замену частей строки. Первым параметром принимается подстрока, которую заменяем, а
+  вторым - подстрока, на которую заменяем.
+  <p>строка.replace(что заменяем, на что заменяем);</p>
+  <p>let elem = 'ab';</p>
+  <p>let str = 'ab cde ab';</p>
+  <p>while (str.includes(elem)) {</p>
+  <p>str = str.replace(elem, '!');</p>
+  <p>}</p>
+  <p>console.log(str);</p>
+</body>
+</html>
