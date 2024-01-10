@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		
+		<p id="elem">1</p>
+		<p id="elem1">2</p>
+		<input id="button" type="submit">
+
+		
+		<script>
+
+		let elem = document.querySelector('#elem');
+		let elem1 = document.querySelector('#elem1');
+		let button = document.querySelector('#button');
+
+		button.addEventListener('click', function() {
+			console.log(Number(elem.textContent) + Number(elem1.textContent));
+		});
+		
+		</script>
+	</body>
+</html>

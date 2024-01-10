@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<p id="elem">text</p>
+		<input id="button" type="submit">
+
+		
+		<script>
+
+		let elem = document.querySelector('#elem');
+		let button = document.querySelector('#button');
+
+		button.addEventListener('click', function() {
+			elem.textContent = '!!!';
+		});
+		console.log(elem.textContent);
+		</script>
+	</body>
+</html>
