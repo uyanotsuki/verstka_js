@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<input class="but" value="1">
+		<input class="but" value="2">
+
+		<input id="button" type="submit" value="жми!">
+
+		<p class="elem">yoshi</p>
+
+		<script>
+	 	let elems = document.querySelector('.elem'); 
+		let but = document.querySelectorAll('.but'); 
+		let button = document.getElementById('button'); 
+		button.addEventListener('click', func);
+		
+		function func() {
+		let sum = 0;
+		elems.textContent = ''; 
+		for (let input of but) {
+			sum += Number(input.value);
+		}
+		elems.textContent = sum;
+		}
+		</script>
+	</body>
+</html>

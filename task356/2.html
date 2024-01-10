@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<p class="elem">zxc</p>
+		<p class="elem">zxc</p>
+		<input id="button" type="submit" value="Жми!">
+
+		<script>
+		let button = document.querySelector('#button');
+		button.addEventListener('click', func);
+		function func() {
+			let elems = document.querySelectorAll('.elem');
+
+			for(let i = 0; i < elems.length;)
+			{
+				let elem = elems[i++];
+				elem.textContent += i;
+			}
+		}
+		</script>
+    
+	</body>
+</html>
