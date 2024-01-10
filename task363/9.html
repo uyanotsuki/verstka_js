@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input id="inp1">
+  <input id="inp2">
+  <input id="inp3">
+
+  <button id="btn">click</button>
+
+  <script>
+    let btn = document.querySelector('#btn');
+    let inp1 = document.querySelector('#inp1');
+    let inp2 = document.querySelector('#inp2');
+    let inp3 = document.querySelector('#inp3');
+
+    btn.addEventListener('click', function () {
+      inp3.value = Number(inp1.value) + Number(inp2.value);
+    });
+
+
+  </script>
+</body>
+
+</html>

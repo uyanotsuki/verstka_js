@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input id="inp1">
+  <input id="inp2">
+  <p id="res"></p>
+  <button id="btn">click</button>
+  <script>
+    let btn = document.querySelector('#btn');
+    let res = document.querySelector('#res');
+    let inp1 = document.querySelector('#inp1');
+    let inp2 = document.querySelector('#inp2');
+
+    btn.addEventListener('click', function () {
+      res.textContent = Number(inp1.value) + Number(inp2.value);
+    });
+  </script>
+
+  <!-- 11 -->
+  <input data-text="text1">
+  <input data-text="text2">
+  <input data-text="text3">
+  
+  <button id="btn">click</button>
+  <script>
+    let inputs = document.querySelectorAll('input');
+    let button = document.querySelector('#btn');
+
+    button.addEventListener('click', function () {
+      for (let input of inputs) {
+        if (input.value === input.dataset.text) {
+          input.classList.add('right');
+        } else {
+          input.classList.remove('right');
+        }
+      }
+    });
+  </script>
+
+  <!-- /12 -->
+  <input>
+  <input>
+  <input>
+  <button id="btn">click</button>
+  <script>
+    let inputs1 = document.querySelectorAll('input');
+    let button1 = document.querySelector('#btn');
+    let texts = [
+      'text1',
+      'text2',
+      'text3',
+    ];
+    button1.addEventListener('click', function () {
+      for (let i = 0; i < inputs1.length; i++) {
+        if (inputs1[i].value === texts[i]) {
+          input1s[i].classList.add('right');
+        } else {
+          inputs1[i].classList.add('wrong');
+        }
+      }
+    });
+  </script>
+  
+
+<!-- 13 -->
+<input>
+<input>
+<input>
+
+<button id="btn">click</button>
+<script>
+
+  let inputs2 = document.querySelectorAll('input');
+  let btn2 = document.querySelector('#btn');
+  let sum2 = 0;
+
+  btn.addEventListener('click', function () {
+    for (let input of inputs2) {
+      sum2 += Number(input.value);
+    }
+
+    console.log(sum2);
+  });
+
+
+
+</script>
+
+</body>
+
+</html>
