@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		  <img id="image" src="">
+    <button onclick="changeImage('first')">Первая картинка</button>
+    <button onclick="changeImage('second')">Вторая картинка</button>
+    
+    <script>
+      function changeImage(image) {
+        let yoshi = document.getElementById('image');
+        if (image == 'first') {
+          yoshi.src = "C:\\Users\\wh0yo\\OneDrive\\Рабочий стол\\pics\\yuanotsuki.jpg";
+        }
+        if (image == 'second') {
+          yoshi.src = "C:\\Users\\wh0yo\\OneDrive\\Рабочий стол\\pics\\teiko.jpg";
+        }
+      }
+    </script>
+
+	</body>
+</html>

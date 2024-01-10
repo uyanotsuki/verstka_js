@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		
+		<img id="myImage" src="C:\Users\wh0yo\OneDrive\Рабочий стол\pics\1b9d61e9de2bca27ba45c60e6d348453.jpg"" alt="Картинка">
+		<button id="myButton">Нажми меня</button>
+		<p id="myParagraph"></p>
+
+		<script>
+		let image = document.getElementById("myImage");
+		let button = document.getElementById("myButton");
+		let paragraph = document.getElementById("myParagraph");
+
+		button.addEventListener("click", function() {
+			let imagePath = image.getAttribute("src");
+			paragraph.textContent = imagePath;
+		});
+		</script>
+
+	</body>
+</html>

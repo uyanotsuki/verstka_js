@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		
+		<a id="myLink" href="https://www.ivi.ru/watch/136478">Ссылка</a>
+		<button id="myButton">Нажми меня</button>
+		<p id="myParagraph"></p>
+
+		
+		<script>
+		let link = document.getElementById("myLink");
+		let button = document.getElementById("myButton");
+		let paragraph = document.getElementById("myParagraph");
+
+		button.addEventListener("click", function() {
+			let href = link.getAttribute("href");
+			paragraph.textContent = href;
+		});
+		</script>
+    
+	</body>
+</html>

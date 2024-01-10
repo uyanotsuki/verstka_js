@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a id="myLink" href="https://www.deftones.com/">Ссылка</a>
+  <button id="myButton">Нажми меня</button>
+  
+  <script>
+    let link = document.getElementById("myLink");
+    let button = document.getElementById("myButton");
+
+    button.addEventListener("click", function () {
+      var href = link.getAttribute("href");
+      link.textContent += " (" + href + ")";
+    });
+  </script>
+  
+</body>
+</html>

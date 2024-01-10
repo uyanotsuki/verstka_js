@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		
+    <img id="myImage" src="C:\Users\wh0yo\OneDrive\Рабочий стол\pics\yuanotsuki.jpg" alt="Картинка">
+    <button id="myButton">Нажми меня</button>
+    
+    <script>
+      let image = document.getElementById("myImage");
+      let button = document.getElementById("myButton");
+
+      button.addEventListener("click", function () {
+        let currentWidth = image.width;
+        if (currentWidth > 0) {
+          image.width = currentWidth / 2;
+        }
+      });
+    </script>
+
+	</body>
+</html>
