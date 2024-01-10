@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+			
+		<button id="button">1</button>
+
+    	
+		<script>
+		 let button = document.querySelector('#button');
+  			button.addEventListener('click', func);
+
+			function func() {
+				button.textContent = Number(button.textContent) + 1;
+			}
+		
+		</script>
+	</body>
+</html>
