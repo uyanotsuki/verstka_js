@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="1.js"></script>
+</head>
+
+<body>
+  <ul>
+    <li>2000</li>
+    <li>2004</li>
+    <li>2021</li>
+    <li>2022</li>
+    <li>2025</li>
+    <li>2031</li>
+  </ul>
+  <script>
+    let lis = document.querySelectorAll('ul li');
+    let sum = 0;
+
+    for (let li of lis) {
+      let year = Number(li.textContent);
+      let digitsSum = Array.from(String(year), Number).reduce((acc, digit) => acc + digit, 0);
+
+      if (digitsSum === 6) {
+        sum += year;
+      }
+    }
+
+    console.log(sum);
+  </script>
+</body>
+
+</html>
