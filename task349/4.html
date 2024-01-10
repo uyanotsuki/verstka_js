@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<input id="elem" value="ff">
+		<input id="elem1" value="15">
+		<button id="myButton">Нажми меня</button>
+
+		
+    	
+	
+		<script>
+		let elem = document.querySelector('#elem');
+		let elem1 = document.querySelector('#elem1');
+		let button = document.querySelector('#myButton');
+	
+		button.addEventListener('click', function() {
+			let x = elem.value;
+			elem.value = elem1.value;
+			elem1.value = x;
+		});
+		
+		</script>
+	</body>
+</html>

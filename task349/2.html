@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<input id="elem" value="text">
+		<button id="myButton">Нажми меня</button>
+
+		<p id="abz"></p>
+    	
+	
+		<script>
+		let elem = document.querySelector('#elem');
+		let button = document.querySelector('#myButton');
+		let p = document.querySelector('#abz');
+	
+		button.addEventListener('click', function() {
+			p.innerHTML = elem.value;
+		});
+		
+		</script>
+	</body>
+</html>
