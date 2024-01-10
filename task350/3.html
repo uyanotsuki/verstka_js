@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<input id="elem" value="text">
+    	
+	
+		<script>
+		
+		let elem = document.querySelector('#elem');
+
+		elem.addEventListener('focus', function() {
+			console.log(elem.value = '');
+		});
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<input id="elem" value="25">
+    	
+	
+		<script>
+		
+		let elem = document.querySelector('#elem');
+
+		elem.addEventListener('blur', function() {
+			console.log(Number(elem.value) * Number(elem.value));
+		});
+
+		</script>
+	</body>
+</html>

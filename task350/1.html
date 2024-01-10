@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<input id="elem" value="text">
+    	
+	
+		<script>
+		
+		let elem = document.querySelector('#elem');
+		elem.addEventListener('focus', function() {
+			console.log(elem.value = '1');
+		});
+
+		elem.addEventListener('blur', function() {
+			console.log(elem.value = '2');
+		});
+
+		</script>
+	</body>
+</html>
