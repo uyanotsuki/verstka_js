@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a id="myLink" href="https://www.deftones.com/">Ссылка </a>
+  <button id="myButton">Добавить текст</button>
+  
+  <script>
+    let myLink = document.querySelector('#myLink');
+    let button = document.querySelector('#myButton');
+    button.addEventListener('click', func);
+
+    function func() {
+      myLink.innerHTML += myLink.href;
+      this.removeEventListener('click', func);
+    }
+
+  </script>
+</body>
+</html>
